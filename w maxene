@@ -1,0 +1,37 @@
+const NFTs = []
+
+function ShenanigansNiMax (_name, _kpopgroup, _favfruit, _age, _height, _hogwartshouse, _mbti, _favcolor, _favtimeoftheday, _favanimal, _petpeeve) {
+    const NFT = {
+        "NAME": _name, 
+        "FAV KPOP GROUP": _kpopgroup,  
+        "FAV FRUIT": _favfruit, 
+        "AGE": _age,
+        "HEIGHT": _height,
+        "HOGWARTS HOUSE" : _hogwartshouse, 
+        "MBTI": _mbti,
+        "FAV COLOR": _favcolor, 
+        "FAV TIME OF THE DAY": _favtimeoftheday,
+        "FAV ANIMAL": _favanimal,
+        "PET PEEVE": _petpeeve
+
+    
+    }
+    NFTs.push(NFT); 
+    console.log("ShenanigansNiMax: " + _name)  
+}
+
+function listNFTs () {
+for(let i = 0; i  < NFTs.length; i++) {
+console.log(NFTs[i])
+}
+}
+
+function getTotalSupply() {
+console.log(NFTs.length); 
+}
+
+
+ShenanigansNiMax("peyaaa", "Stray Kids (para maangas daw)", "Mango (yummers daw)", "17", "5'0", "Raven Claw", "INTJ", "Sage Green", "Night", "Cats ฅ/ᐠ ‧̫‧ ᐟ\ฅ", "Poking")
+listNFTs(); 
+getTotalSupply();
+
